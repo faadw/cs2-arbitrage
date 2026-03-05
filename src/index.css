@@ -1,0 +1,71 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap');
+
+:root {
+  /* Color Palette */
+  --bg-primary: #0a0a0c;
+  --bg-secondary: #121216;
+  --bg-tertiary: #1a1a20;
+  
+  --accent-blue: #3a75ff;
+  --accent-blue-hover: #5086ff;
+  --accent-blue-glow: rgba(58, 117, 255, 0.2);
+  
+  --accent-green: #24b47e;
+  --accent-green-glow: rgba(36, 180, 126, 0.15);
+  
+  --accent-red: #ff3366;
+  --accent-red-glow: rgba(255, 51, 102, 0.15);
+  
+  --accent-warning: #ffb732;
+  --accent-warning-glow: rgba(255, 183, 50, 0.15);
+
+  --text-primary: #f0f0f5;
+  --text-secondary: #9aa0a6;
+  --text-muted: #5f6368;
+
+  --border-color: rgba(255, 255, 255, 0.05);
+  --border-light: rgba(255, 255, 255, 0.1);
+
+  --card-bg: #141418;
+  --card-bg-hover: #1a1a20;
+
+  /* Transitions */
+  --transition-fast: 0.1s ease-out;
+  --transition-normal: 0.2s cubic-bezier(0.175, 0.885, 0.32, 1.275); /* Snappy bounce effect */
+  --transition-slow: 0.3s cubic-bezier(0.2, 0.8, 0.2, 1);
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: 'Inter', system-ui, -apple-system, sans-serif;
+  background-color: var(--bg-primary);
+  background-image: 
+    radial-gradient(circle at 15% 50%, rgba(58, 117, 255, 0.04), transparent 25%),
+    radial-gradient(circle at 85% 30%, rgba(36, 180, 126, 0.03), transparent 25%);
+  color: var(--text-primary);
+  line-height: 1.5;
+  min-height: 100vh;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+/* Custom Scrollbar */
+::-webkit-scrollbar {
+  width: 8px;
+  height: 8px;
+}
+::-webkit-scrollbar-track {
+  background: var(--bg-primary);
+}
+::-webkit-scrollbar-thumb {
+  background: var(--bg-tertiary);
+  border-radius: 4px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: var(--text-muted);
+}

@@ -1,0 +1,8 @@
+{
+    "rewrites": [
+        {
+            "source": "/api/csfloat/:path*",
+            "destination": "https://csfloat.com/:path*"
+        }
+    ]
+}
